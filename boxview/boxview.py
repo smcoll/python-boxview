@@ -291,7 +291,7 @@ class BoxView(object):
 
     @staticmethod
     def get_session_url(session_id, type='view', **params):
-        """ Allowed types are: `view`, `assets`, `download`. """
+        """ Allowed types are: `view`, `assets`, `content`. """
         url = 'sessions/{}/{}'.format(session_id, type)
         url = urljoin(API_URL, url)
         return add_to_url(url, **params)
